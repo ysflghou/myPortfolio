@@ -2,7 +2,7 @@
   <div id="app">
     <NavBar />
     <div id="nav" style="margin-top: 100px;">
-      <router-link to="/home">Home</router-link>|
+      <router-link to="/experiences">Experiences</router-link>|
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
@@ -10,12 +10,9 @@
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue";
 export default {
   name: "app",
-  components: {
-    NavBar
-  }
+  components: {}
 };
 </script>
 <style>

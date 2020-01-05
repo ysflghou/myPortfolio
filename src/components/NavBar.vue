@@ -9,7 +9,7 @@
       <!-- Links -->
       <ul class="navbar-nav">
         <li class="nav-item float-left">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
     </nav>
