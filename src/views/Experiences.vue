@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2>Experiences</h2>
+    <h2>Experience</h2>
     <div class="container experiences">
       <div v-for="id in experiencesIds" :key="id">
         <Experience v-bind:id="id" />
@@ -9,7 +9,7 @@
   </div>
 </template>
 <script>
-import experiencesStore from "@/experiences-store.js";
+import experiencesStore from "@/store/experiences.js";
 export default {
   computed: {
     experiencesIds() {

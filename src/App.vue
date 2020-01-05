@@ -2,7 +2,8 @@
   <div id="app">
     <NavBar />
     <div id="nav" style="margin-top: 100px;">
-      <router-link to="/experiences">Experiences</router-link>|
+      <router-link to="/experiences">Experience</router-link>|
+      <router-link to="/educations">Education</router-link>|
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
