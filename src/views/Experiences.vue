@@ -9,7 +9,7 @@
   </div>
 </template>
 <script>
-import experiencesStore from "@/store/experiences.js";
+import experiencesStore from "../assets/store/experiences.js";
 export default {
   computed: {
     experiencesIds() {

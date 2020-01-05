@@ -13,7 +13,7 @@
   </div>
 </template>
 <script lang="ts">
-import educationsStore from "@/store/educations.js";
+import educationsStore from "../assets/store/educations.js";
 import Utils from "@/Utils.ts";
 import { Vue } from "vue-property-decorator";
 export default Vue.extend({

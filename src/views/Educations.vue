@@ -9,7 +9,7 @@
   </div>
 </template>
 <script>
-import educationsStore from "@/store/educations.js";
+import educationsStore from "../assets/store/educations.js";
 export default {
   computed: {
     educationsIds() {
