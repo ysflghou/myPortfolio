@@ -9,11 +9,13 @@
   </div>
 </template>
 <script>
-import educationsStore from "../assets/store/educations.js";
+import Education from "@/views/Education.vue";
+import educationsStore from "@/assets/store/educations.ts";
 export default {
+  components: { Education },
   computed: {
     educationsIds() {
-      return educationsStore.educations.map(education => education.id);
+      return educationsStore.GetEducations().map(education => education.id);
     }
   }
 };

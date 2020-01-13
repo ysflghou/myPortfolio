@@ -13,9 +13,11 @@
   </div>
 </template>
 <script lang="ts">
-import educationsStore from "../assets/store/educations.js";
+import educationsStore from "@/assets/store/educations.ts";
 import Utils from "@/Utils.ts";
 import { Vue } from "vue-property-decorator";
+import Educ from "@/models/Educ";
+
 export default Vue.extend({
   props: {
     id: {
@@ -25,18 +27,27 @@ export default Vue.extend({
     }
   },
   computed: {
-    educ() {
-      return educationsStore.educations.find(
-        education => education.id == this.id
+    educ(): Educ {
+      const educ = educationsStore
+        .GetEducations()
+        .find(education => education.id == this.id);
+      if (educ == undefined) return Educ.default();
+      return new Educ(
+        educ.id,
+        educ.title,
+        educ.school,
+        educ.location,
+        educ.fromDate,
+        educ.toDate
       );
     },
-    from() {
+    from(): string {
       return Utils.GetShowedDate(this.educ.fromDate);
     },
-    to() {
+    to(): string {
       return Utils.GetShowedDate(this.educ.toDate);
     },
-    period() {
+    period(): string {
       return Utils.GetPeriod(this.educ.fromDate, this.educ.toDate);
     }
   }

@@ -9,11 +9,13 @@
   </div>
 </template>
 <script>
-import experiencesStore from "../assets/store/experiences.js";
+import Experience from "@/views/Experience.vue";
+import experiencesStore from "@/assets/store/experiences.ts";
 export default {
+  components: { Experience },
   computed: {
     experiencesIds() {
-      return experiencesStore.experiences.map(experience => experience.id);
+      return experiencesStore.GetExperiences().map(experience => experience.id);
     }
   }
 };

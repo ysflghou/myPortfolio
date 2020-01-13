@@ -15,9 +15,11 @@
   </div>
 </template>
 <script lang="ts">
-import experiencesStore from "../assets/store/experiences.js";
+import experiencesStore from "@/assets/store/experiences.ts";
 import Utils from "@/Utils.ts";
 import { Vue } from "vue-property-decorator";
+import Exp from "@/models/Exp";
+
 export default Vue.extend({
   props: {
     id: {
@@ -27,18 +29,29 @@ export default Vue.extend({
     }
   },
   computed: {
-    exp() {
-      return experiencesStore.experiences.find(
-        experience => experience.id == this.id
+    exp(): Exp {
+      const exp = experiencesStore
+        .GetExperiences()
+        .find(experience => experience.id == this.id);
+      if (exp == undefined) return Exp.default();
+      return new Exp(
+        exp.id,
+        exp.poste,
+        exp.company,
+        exp.location,
+        exp.fromDate,
+        exp.toDate,
+        exp.description,
+        exp.link
       );
     },
-    from() {
+    from(): string {
       return Utils.GetShowedDate(this.exp.fromDate);
     },
-    to() {
+    to(): string {
       return Utils.GetShowedDate(this.exp.toDate);
     },
-    period() {
+    period(): string {
       return Utils.GetPeriod(this.exp.fromDate, this.exp.toDate);
     }
   }

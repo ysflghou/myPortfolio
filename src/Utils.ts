@@ -14,7 +14,7 @@ const Months = [
 ];
 
 export default {
-  GetPeriod(fromDate: String, toDate: String): String {
+  GetPeriod(fromDate: string, toDate: string): string {
     var diff = new Date(toDate).getTime() - new Date(fromDate).getTime();
     var diffInMonths = diff / (1000 * 3600 * 24 * 30.5); // not exact
     if (diffInMonths <= 0) return "1 mon";
@@ -27,7 +27,7 @@ export default {
       return yearFormat + " " + monsFormat;
     }
   },
-  GetShowedDate(dateContent: String): String {
+  GetShowedDate(dateContent: string): string {
     var date = new Date(dateContent);
     var year = date.getFullYear();
     var month = date.getMonth();

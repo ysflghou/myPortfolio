@@ -11,9 +11,11 @@
 </template>
 
 <script>
+import NavBar from "@/components/NavBar.vue";
+
 export default {
   name: "app",
-  components: {}
+  components: { NavBar }
 };
 </script>
 <style>
