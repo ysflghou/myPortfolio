@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="header">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
       <!-- Brand/logo -->
       <a class="navbar-brand" href="#">
@@ -20,5 +20,13 @@
 import { Component, Vue } from "vue-property-decorator";
 
 @Component
-export default class NavBar extends Vue {}
+export default class Header extends Vue {}
 </script>
+<style scoped>
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 2rem;
+}
+</style>

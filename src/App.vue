@@ -1,21 +1,28 @@
 <template>
   <div id="app">
-    <NavBar />
-    <div id="nav" style="margin-top: 100px;">
-      <router-link to="/home">Home</router-link>|
-      <router-link to="/experiences">Experience</router-link>|
-      <router-link to="/educations">Education</router-link>
+    <Header />
+    <div id="content">
+      <div id="nav" style="margin-top: 100px;">
+        <router-link to="/home">Home</router-link>|
+        <router-link to="/experiences">Experience</router-link>|
+        <router-link to="/educations">Education</router-link>
+      </div>
+      <router-view :key="$route.path" />
     </div>
-    <router-view :key="$route.path" />
+    <Footer />
   </div>
 </template>
 
 <script>
-import NavBar from "@/components/NavBar.vue";
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "app",
-  components: { NavBar }
+  components: {
+    Header,
+    Footer
+  }
 };
 </script>
 <style>
@@ -25,10 +32,16 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  position: relative;
+  min-height: 100vh;
+}
+
+#content {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 #nav {
-  padding: 30px;
   font-size: larger;
 }
 
