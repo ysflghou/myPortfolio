@@ -2,11 +2,11 @@
   <div id="app">
     <NavBar />
     <div id="nav" style="margin-top: 100px;">
+      <router-link to="/home">Home</router-link>|
       <router-link to="/experiences">Experience</router-link>|
-      <router-link to="/educations">Education</router-link>|
-      <router-link to="/about">About</router-link>
+      <router-link to="/educations">Education</router-link>
     </div>
-    <router-view />
+    <router-view :key="$route.path" />
   </div>
 </template>
 
@@ -29,11 +29,13 @@ export default {
 
 #nav {
   padding: 30px;
+  font-size: larger;
 }
 
 #nav a {
   font-weight: bold;
   color: #2c3e50;
+  padding: 10px;
 }
 
 #nav a.router-link-exact-active {
