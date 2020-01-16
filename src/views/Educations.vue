@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <h2>Education</h2>
     <div class="container educations">
       <div v-for="id in educationsIds" :key="id">
         <Education v-bind:id="id" />

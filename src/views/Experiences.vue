@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <h2>Experience</h2>
     <div class="container experiences">
       <div v-for="id in experiencesIds" :key="id">
         <Experience v-bind:id="id" />
@@ -21,7 +20,5 @@ export default {
 };
 </script>
 <style scoped>
-.experiences {
-  text-align: left;
-}
+
 </style>

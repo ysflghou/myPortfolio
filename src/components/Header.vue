@@ -5,13 +5,6 @@
       <a class="navbar-brand" href="#">
         <img src="../assets/logo.png" alt="logo" style="width:40px;" />
       </a>
-
-      <!-- Links -->
-      <ul class="navbar-nav">
-        <li class="nav-item float-left">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
     </nav>
   </div>
 </template>

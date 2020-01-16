@@ -2,7 +2,7 @@
   <div class="container">
     <div class="card">
       <div class="card-header">
-        <h4 class="card-title">{{exp.poste}}</h4>
+        <h3 class="card-title">{{exp.poste}}</h3>
       </div>
       <div class="card-body">
         <h5 class="card-title">{{exp.company}}</h5>
@@ -57,3 +57,80 @@ export default Vue.extend({
   }
 });
 </script>
+<style scoped>
+@media screen and (min-width: 601px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 601px) {
+  h6 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h6 {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 601px) {
+  h5 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h5 {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 601px) {
+  h4 {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h4 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 601px) {
+  h3 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h3 {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 601px) {
+  h2 {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  margin: auto;
+  text-align: left;
+  justify-content: flex-start;
+  font-family: arial;
+}
+</style>

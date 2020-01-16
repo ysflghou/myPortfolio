@@ -3,7 +3,7 @@ const experiences: Exp[] = [
   {
     id: 1,
     poste: "Software Engineer",
-    company: "Societe Generale Africa Technologies and Services",
+    company: "Societé Générale Africa Technologies and Services",
     location: "Casablanca Prefecture, Morocco",
     fromDate: "08-02-2019", // mm-dd-yyyy
     toDate: "01-02-2020",
@@ -14,7 +14,7 @@ const experiences: Exp[] = [
   {
     id: 2,
     poste: "machine learning intern",
-    company: "Societe Generale Africa Technologies and Services",
+    company: "Societé Générale Africa Technologies and Services",
     location: "Casablanca Prefecture, Morocco",
     fromDate: "02-02-2019",
     toDate: "07-02-2019",

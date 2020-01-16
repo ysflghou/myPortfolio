@@ -27,6 +27,7 @@ export default {
 </script>
 <style>
 #app {
+  min-width: 100%;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -43,6 +44,7 @@ export default {
 
 #nav {
   font-size: larger;
+  padding-bottom: 80px;
 }
 
 #nav a {
