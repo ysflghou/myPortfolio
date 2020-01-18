@@ -21,15 +21,16 @@ const routes = [
     name: "educations",
     component: () =>
       import(/* webpackChunkName: "educations" */ "../views/Educations.vue")
-  },
-  {
-    path: "*",
-    redirect: "/home"
-  }
+  } //,
+  // {
+  //   path: "*",
+  //   redirect: "/home"
+  // }
 ];
 
 const router = new VueRouter({
   mode: "history",
+  base: "/myportfolio/",
   routes
 });
 
