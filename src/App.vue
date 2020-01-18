@@ -3,7 +3,7 @@
     <Header />
     <div id="content">
       <div id="nav" style="margin-top: 100px;">
-        <router-link to="/home">Home</router-link>|
+        <router-link to="/">Home</router-link>|
         <router-link to="/experiences">Experience</router-link>|
         <router-link to="/educations">Education</router-link>
       </div>
