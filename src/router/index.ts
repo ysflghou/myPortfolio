@@ -6,6 +6,11 @@ Vue.use(VueRouter);
 
 const routes = [
   {
+    path: "/home",
+    name: "home",
+    component: Home
+  },
+  {
     path: "/experiences",
     name: "experiences",
     component: () =>
@@ -18,14 +23,6 @@ const routes = [
       import(/* webpackChunkName: "educations" */ "../views/Educations.vue")
   },
   {
-    path: "/home",
-    name: "home",
-    // route level code-splitting
-    // this generates a separate chunk (home.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: Home
-  },
-  {
     path: "*",
     redirect: "/home"
   }
@@ -33,7 +30,6 @@ const routes = [
 
 const router = new VueRouter({
   mode: "history",
-  base: "/myporttfolio/",
   routes
 });
 
