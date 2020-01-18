@@ -6,9 +6,9 @@
       <h5 class="title">Software engineer</h5>
       <div>SG ATS</div>
       <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
-        et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+        Hello, I'm Youssef Lghoumaigui, a junior software engineer from morocco.
+        Feel free to contact me if you have something to discuss about software engineering
+        or something else &#128521;
       </p>
       <div>
         <button>Get in touch</button>
