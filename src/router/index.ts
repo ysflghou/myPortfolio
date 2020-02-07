@@ -23,6 +23,12 @@ const routes = [
       import(/* webpackChunkName: "educations" */ "../views/Educations.vue")
   },
   {
+    path: "/contact",
+    name: "contact",
+    component: () =>
+      import(/* webpackChunkName: "contact" */ "../components/ContactForm.vue")
+  },
+  {
     path: "*",
     redirect: "/"
   }

@@ -1,11 +1,12 @@
 <template>
   <div id="app">
-    <Header />
+    <!-- <Header /> -->
     <div id="content">
       <div id="nav" style="margin-top: 100px;">
         <router-link to="/">Home</router-link>|
         <router-link to="/experiences">Experience</router-link>|
-        <router-link to="/educations">Education</router-link>
+        <router-link to="/educations">Education</router-link>|
+        <router-link to="/contact">Contact</router-link>
       </div>
       <router-view :key="$route.path" />
     </div>
@@ -20,13 +21,14 @@ import Footer from "@/components/Footer.vue";
 export default {
   name: "app",
   components: {
-    Header,
+    // Header,
     Footer
   }
 };
 </script>
 <style>
 #app {
+  background-color: gray;
   min-width: 100%;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
