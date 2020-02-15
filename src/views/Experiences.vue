@@ -1,11 +1,9 @@
 <template>
-  <div class="container">
     <div class="container experiences">
       <div v-for="id in experiencesIds" :key="id">
         <Experience v-bind:id="id" />
       </div>
     </div>
-  </div>
 </template>
 <script>
 import Experience from "@/views/Experience.vue";
@@ -20,5 +18,8 @@ export default {
 };
 </script>
 <style scoped>
-
+.experiences {
+  text-align: left;
+  margin: 50px auto;
+}
 </style>

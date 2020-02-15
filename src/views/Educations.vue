@@ -1,11 +1,11 @@
 <template>
-  <div class="container">
+  <!-- <div class="container"> -->
     <div class="container educations">
       <div v-for="id in educationsIds" :key="id">
         <Education v-bind:id="id" />
       </div>
     </div>
-  </div>
+  <!-- </div> -->
 </template>
 <script>
 import Education from "@/views/Education.vue";
@@ -22,5 +22,6 @@ export default {
 <style scoped>
 .educations {
   text-align: left;
+  margin: 50px auto;
 }
 </style>

@@ -1,13 +1,28 @@
 <template>
   <div id="app">
-    <!-- <Header /> -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <a class="navbar-brand" id="user_name" href="/">Youssef Lghoumaigui</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul id = "mynav" class="navbar-nav">
+          <li class="nav-item myitem">
+            <router-link to="/">Home</router-link>
+          </li>
+          <li class="nav-item myitem">
+            <router-link to="/experiences">Experience</router-link>
+          </li>
+          <li class="nav-item myitem">
+            <router-link to="/educations">Education</router-link>
+          </li>
+          <li class="nav-item myitem">
+            <router-link to="/contact">Contact</router-link>
+          </li>     
+        </ul>
+      </div>  
+    </nav>
     <div id="content">
-      <div id="nav" style="margin-top: 100px;">
-        <router-link to="/">Home</router-link>|
-        <router-link to="/experiences">Experience</router-link>|
-        <router-link to="/educations">Education</router-link>|
-        <router-link to="/contact">Contact</router-link>
-      </div>
       <router-view :key="$route.path" />
     </div>
     <Footer />
@@ -15,20 +30,18 @@
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
   name: "app",
   components: {
-    // Header,
     Footer
   }
 };
 </script>
 <style>
 #app {
-  background-color: gray;
+  background-color: azure;
   min-width: 100%;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -37,25 +50,27 @@ export default {
   color: #2c3e50;
   position: relative;
   min-height: 100vh;
+} 
+#user_name {
+font-family: 'Sriracha', cursive;
 }
 
 #content {
   padding-bottom: 2rem;
-  padding-top: 2rem;
 }
 
-#nav {
+#mynav {
   font-size: larger;
-  padding-bottom: 80px;
 }
-
-#nav a {
+.myitem {
+  margin: 10px;
+}
+#mynav a {
   font-weight: bold;
-  color: #2c3e50;
-  padding: 10px;
+  color:white;
 }
 
-#nav a.router-link-exact-active {
+#mynav a.router-link-exact-active {
   color: #42b983;
 }
 </style>

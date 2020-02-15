@@ -54,6 +54,14 @@ export default Vue.extend({
 });
 </script>
 <style scoped>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  margin: 1rem auto;
+  text-align: left;
+  justify-content: flex-start;
+  font-family: arial;
+}
 @media screen and (min-width: 601px) {
   p {
     font-size: 16px;

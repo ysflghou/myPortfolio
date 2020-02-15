@@ -1,18 +1,15 @@
 <template>
   <div>
     <div class="card">
-      <img class="rounded-circle responsive" src="../assets/Lghoumaigui.jpg" alt="John" />
+      <img class="rounded-circle responsive" src="../assets/Lghoumaigui.jpg" alt="Me" />
       <h3>Lghoumaigui Youssef</h3>
       <h5 class="title">Software engineer</h5>
       <div>SG ATS</div>
       <p>
-        Hello, I'm Youssef Lghoumaigui, a junior software engineer from morocco.
-        Feel free to contact me if you have something to discuss about software engineering
+        Hello, I'm a junior software engineer from morocco.
+        Feel free to <router-link to="/contact" style="font-size: inherit;"><u>Contact Me</u></router-link> to talk about software engineering
         or something else &#128521;
       </p>
-      <div>
-        <button>Get in touch</button>
-      </div>
     </div>
   </div>
 </template>
@@ -21,7 +18,7 @@
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 80%;
-  margin: auto;
+  margin: 50px auto;
   text-align: center;
   font-family: arial;
   padding-top: 20px;
