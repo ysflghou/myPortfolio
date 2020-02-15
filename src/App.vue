@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-      <a class="navbar-brand" id="user_name" href="/">Youssef Lghoumaigui</a>
+      <router-link class="navbar-brand" id="user_name" to="/">Youssef Lghoumaigui</router-link>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
