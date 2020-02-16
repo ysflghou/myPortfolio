@@ -6,7 +6,7 @@
       <h5 class="title">Software engineer</h5>
       <div>SG ATS</div>
       <p>
-        Hello, I'm a junior software engineer from morocco.
+        Hello, I'm a junior software engineer from Morocco.
         Feel free to <router-link to="/contact" class="contact_me"><u>Contact Me</u></router-link> to talk about software engineering
         or something else &#128521;
       </p>
