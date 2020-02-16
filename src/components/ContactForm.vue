@@ -1,8 +1,11 @@
 <template>
   <div id="app">
-    <form class="mail-form" @submit.prevent="submit">
+    <form action="https://send.pageclip.co/oGob3qXl1pZ7VX8vyHPmEJ44EmvHN8Wl" class="mail-form" method="post">
       <div class="error-message">
         <p v-show="!email.valid">Oh, please enter a valid email address.</p>
+      </div>
+      <div class="alert alert-success" v-show="submitted">
+        <strong>Thank you !</strong> your message is sent successfully.
       </div>
       <fieldset>
         <legend>Contact</legend>
@@ -34,7 +37,7 @@
           <span class="counter">{{ message.text.length }} / {{ message.maxlength }}</span>
         </div>
         <div class="submit">
-          <input type="submit" value="Send Message" />
+          <input @click="doAction()" type="submit" value="Send Message" />
         </div>
       </fieldset>
     </form>
@@ -59,7 +62,7 @@ export default {
     };
   },
   methods: {
-    submit: function() {
+    doAction: function() {
       this.submitted = true;
     },
     validate: function(type, value) {
@@ -74,7 +77,8 @@ export default {
   watch: {
     "email.value": function(value) {
       this.validate("email", value);
-    }
+    },
+
   }
 };
 </script>

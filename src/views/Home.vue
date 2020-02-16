@@ -7,7 +7,7 @@
       <div>SG ATS</div>
       <p>
         Hello, I'm a junior software engineer from morocco.
-        Feel free to <router-link to="/contact" style="font-size: inherit;"><u>Contact Me</u></router-link> to talk about software engineering
+        Feel free to <router-link to="/contact" class="contact_me"><u>Contact Me</u></router-link> to talk about software engineering
         or something else &#128521;
       </p>
     </div>
@@ -33,6 +33,10 @@ img {
   padding-top: 5%;
   padding-bottom: 5%;
 }
+.contact_me {
+  font-size: inherit;
+}
+
 @media screen and (max-width: 600px) {
   img.responsive {
     width: 50%;
@@ -72,7 +76,7 @@ a {
 
 button:hover,
 a:hover {
-  opacity: 0.7;
+  color: #42b983;
 }
 p {
   text-align: left;
