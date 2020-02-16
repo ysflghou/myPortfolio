@@ -37,7 +37,7 @@
           <span class="counter">{{ message.text.length }} / {{ message.maxlength }}</span>
         </div>
         <div class="submit">
-          <input @click="doAction()" type="submit" value="Send Message" />
+          <input @click="submittedForm()" type="submit" value="Send Message" />
         </div>
       </fieldset>
     </form>
@@ -62,8 +62,9 @@ export default {
     };
   },
   methods: {
-    doAction: function() {
+    submittedForm: function() {
       this.submitted = true;
+      window.scrollTo(0,0);
     },
     validate: function(type, value) {
       if (type === "email") {
