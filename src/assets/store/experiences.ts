@@ -6,7 +6,7 @@ const experiences: Exp[] = [
     company: "Societé Générale Africa Technologies and Services",
     location: "Casablanca Prefecture, Morocco",
     fromDate: "08-02-2019", // mm-dd-yyyy
-    toDate: "02-15-2020",
+    toDate: "Present",
     description: `Working in a good environment with skilled collaborators on challenging projects,
       using the best practices (SOLID priciples, code reviews, unit tests, continuous integration, ...).`,
     link: "https://africa-technologies-services.sgcib.com/en/"
